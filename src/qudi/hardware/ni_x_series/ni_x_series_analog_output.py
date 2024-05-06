@@ -62,6 +62,7 @@ class NIXSeriesAnalogOutput(ProcessControlSwitchMixin, ProcessSetpointInterface)
                     limits: [-10.0, 10.0]
                     keep_value: True
     """
+
     _device_name = ConfigOption(name='device_name',
                                 default='Dev1',
                                 missing='warn',

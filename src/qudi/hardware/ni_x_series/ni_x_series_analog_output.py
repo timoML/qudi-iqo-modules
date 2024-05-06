@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 """
 This file contains the qudi hardware module to use a National Instruments X-series card as mixed
 signal input data streamer.

@@ -32,7 +32,7 @@ from qudi.util.mutex import Mutex
 from qudi.util.helpers import is_integer_type
 from qudi.interface.data_instream_interface import DataInStreamInterface, DataInStreamConstraints
 from qudi.interface.data_instream_interface import StreamingMode, SampleTiming
-
+#another test
 
 def _make_sine_func(sample_rate: float) -> Callable[[np.ndarray, np.ndarray], None]:
     freq = sample_rate / (20 + 80 * np.random.rand())

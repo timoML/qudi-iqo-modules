@@ -38,6 +38,7 @@ def _make_sine_func(sample_rate: float) -> Callable[[np.ndarray, np.ndarray], No
     freq = sample_rate / (20 + 80 * np.random.rand())
     amp = 1 + np.random.rand() * 9
     noise_lvl = amp * (0.1 + np.random.rand() * 0.4)
+    #this comment is my change 07/05 qudi seminar
     def make_sine(x, y):
         # y[:] = np.sin(2 * np.pi * freq * x)
         np.sin(2 * np.pi * freq * x, out=y)

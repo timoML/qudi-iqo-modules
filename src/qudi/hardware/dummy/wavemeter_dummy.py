@@ -96,6 +96,7 @@ class WavemeterDummy(WavemeterInterface):
 
     def on_activate(self):
         """ Activate module.
+            lol comment added get rekt
         """
         self.log.warning("This module has not been tested on the new qudi core."
                          "Use with caution and contribute bug fixed back, please.")

@@ -63,6 +63,7 @@ class SignalShape(Enum):
     COUNTS = 1
 
 
+
 class SampleGenerator:
     """ Generator object that periodically generates new samples based on a certain timebase but
     the actual sample timestamps can be irregular depending on configured SampleTiming

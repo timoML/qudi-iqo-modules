@@ -20,7 +20,7 @@ See the GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License along with qudi.
 If not, see <https://www.gnu.org/licenses/>.
 """
-
+"Manuel war hier"
 import time
 import numpy as np
 from enum import Enum
@@ -32,12 +32,12 @@ from qudi.util.mutex import Mutex
 from qudi.util.helpers import is_integer_type
 from qudi.interface.data_instream_interface import DataInStreamInterface, DataInStreamConstraints
 from qudi.interface.data_instream_interface import StreamingMode, SampleTiming
-
+#another test 3
 
 def _make_sine_func(sample_rate: float) -> Callable[[np.ndarray, np.ndarray], None]:
     freq = sample_rate / (20 + 80 * np.random.rand())
     amp = 1 + np.random.rand() * 9
-    noise_lvl = amp * (0.1 + np.random.rand() * 0.4)
+    noise_lvl = amp * (0.1 + np.random.rand() * np.random.rand())
     def make_sine(x, y):
         # y[:] = np.sin(2 * np.pi * freq * x)
         np.sin(2 * np.pi * freq * x, out=y)

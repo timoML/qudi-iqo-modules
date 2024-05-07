@@ -386,13 +386,13 @@ class TimeSeriesGui(GuiBase):
                 ch_unit = constraints.channel_units[channel]
                 precision = self._current_value_channel_precision[channel]
                 if np.isnan(val):
-                    self._mw.current_value_label.setText(f'{val} {ch_unit}')
+                    self._mw.current_value_label.setText(f'{channel}: {val} {ch_unit}')
                 elif is_integer_type(constraints.data_type):
-                    self._mw.current_value_label.setText(f'{val:,d} {ch_unit}')
+                    self._mw.current_value_label.setText(f'{channel}: {val:,d} {ch_unit}')
                 elif precision is None:
-                    self._mw.current_value_label.setText(f'{ScaledFloat(val):.5r}{ch_unit}')
+                    self._mw.current_value_label.setText(f'{channel}: {ScaledFloat(val):.5r}{ch_unit}')
                 else:
-                    self._mw.current_value_label.setText(f'{val:,.{precision:d}f} {ch_unit}')
+                    self._mw.current_value_label.setText(f'{channel}: {val:,.{precision:d}f} {ch_unit}')
             except (TypeError, IndexError, KeyError):
                 pass
 

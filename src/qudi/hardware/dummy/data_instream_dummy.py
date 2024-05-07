@@ -46,6 +46,7 @@ def _make_sine_func(sample_rate: float) -> Callable[[np.ndarray, np.ndarray], No
         noise *= 2 * noise_lvl
         noise -= noise_lvl
         #y += noise
+        # no noise
     return make_sine
 
 
